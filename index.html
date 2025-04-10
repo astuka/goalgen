@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalGen - Performance Goal Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GoalGen</h1>
+            <p class="tagline">Generate realistic performance goals in seconds</p>
+        </header>
+
+        <div class="card">
+            <div class="form-group">
+                <label for="role">Select Your Role:</label>
+                <select id="role">
+                    <option value="">-- Select Role --</option>
+                    <option value="General Developer">Software Developer (General)</option>
+                    <option value="Tech Lead">Tech Lead</option>
+                    <option value="Frontend Engineer">Frontend Engineer</option>
+                    <option value="Backend Engineer">Backend Engineer</option>
+                    <option value="Full-Stack Engineer">Full-Stack Engineer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience Level:</label>
+                <select id="experience">
+                    <option value="">-- Select Experience --</option>
+                    <option value="0-2 years">0-2 years</option>
+                    <option value="3-5 years">3-5 years</option>
+                    <option value="5-10 years">5-10 years</option>
+                    <option value="10+ years">10+ years</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="companySize">Company Size:</label>
+                <select id="companySize">
+                    <option value="">-- Select Company Size --</option>
+                    <option value="Startup">Startup (1-50 employees)</option>
+                    <option value="Small">Small Company (51-200 employees)</option>
+                    <option value="Medium">Medium Company (201-1000 employees)</option>
+                    <option value="Large">Large Company (1000+ employees)</option>
+                </select>
+            </div>
+
+            <button id="generateBtn">Generate Goals</button>
+        </div>
+
+        <div id="goalsContainer" class="card">
+            <h2>Your Performance Goals</h2>
+            <p>You can edit these goals before copying them to your clipboard. The edited version will be copied.</p>
+            <div id="goalsList">
+                <!-- Goals will be inserted here -->
+            </div>
+            <button id="copyBtn">Copy to Clipboard</button>
+            <div id="successMessage" class="success-message">Goals copied to clipboard!</div>
+        </div>
+
+        <div class="feedback">
+            <p>How useful was GoalGen? <a href="https://forms.gle/pR3J9i5dQUz38SeJ9">Share your feedback</a></p>
+        </div>
+    </div>
+
+    <footer>
+        Built by JBR Holdings.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
